@@ -10,7 +10,7 @@
       "id": "Microsoft.VisualStudio.Services"
     }
   ],
-  "description": "Build an Release extension that enable you to delete a Resource Group on azure if it does NOT contain any resource.",
+  "description": "Build an Release extension that enable you to delete a Resource Group on Azure if it does NOT contain any resource.",
   "categories": [
     "Build and release"
   ],
