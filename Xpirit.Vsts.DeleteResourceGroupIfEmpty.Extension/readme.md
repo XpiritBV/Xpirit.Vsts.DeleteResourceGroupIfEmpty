@@ -1,0 +1,13 @@
+# Delete a Resource Group if it is empty
+
+With this task you delete a Resource Group if it does not contain ANY resources.
+
+# Description
+
+In the scenario where you want to delete a the resource group only when it doest not contain any resources, you can use this task.
+
+To use the task, just select the connection to azure and then give the resource group name as parameter.
+
+[More inforation on blog](https://blog.olandese.nl/2016/12/19/vsts-task-delete-resource-group-if-empty/)
+[Sources](https://github.com/XpiritBV/Xpirit.Vsts.DeleteResourceGroupIfEmpty)
+

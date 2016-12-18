@@ -1,0 +1,80 @@
+{
+  "manifestVersion": 1,
+  "id": "MarcoMansi-Xpirit-Vsts-DeleteResourceGroupIfEmpty",
+  "name": "Delete an Azure Resource Group if it is empty",
+  "version": "1.0.5",
+  "publisher": "marcomansi",
+  "public": true,
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "description": "Build an Release extension that enable you to delete a Resource Group on azure if it does NOT contain any resource.",
+  "categories": [
+    "Build and release"
+  ],
+  "tags": [
+    "release",
+    "build",
+    "azure",
+    "azurerm",
+    "clean",
+    "resourcegroup",
+    "resource",
+    "pipeline",
+    "infrastucture as code",
+    "arm",
+    "Xpirit",
+    "deploy",
+    "template",
+    "empty",
+    "resouce group"
+  ],
+  "screenshots": [
+    {
+      "path": "Xpirit.Vsts.DeleteResourceGroupIfEmpty.Extension/images/demo.png"
+    }
+  ],
+  "content": {
+    "details": {
+      "path": "Xpirit.Vsts.DeleteResourceGroupIfEmpty.Extension/readme.md"
+    },
+    "license": {
+      "path": "Xpirit.Vsts.DeleteResourceGroupIfEmpty.Extension/license.txt"
+    }
+  },
+  "links": {
+    "getstarted": {
+      "uri": "https://pgroene.wordpress.com/2016/12/13/vsts-task-clean-resource-group/"
+    },
+    "support": {
+      "uri": "https://github.com/XpiritBV/Vsts-Task-DeleteResourceGroupIfEmpty"
+    }
+  },
+  "branding": {
+    "color": "rgb(36, 43, 50)",
+    "theme": "dark"
+  },
+  "icons": {
+    "default": "Xpirit.Vsts.DeleteResourceGroupIfEmpty.Extension/images/DeleteResourceGroupIfEmpty.png"
+  },
+  "files": [
+    {
+      "path": "Xpirit-Vsts-DeleteResourceGroupIfEmpty"
+    }
+  ],
+
+  "contributions": [
+    {
+      "id": "Xpirit-Vsts-DeleteResourceGroupIfEmpty",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "Xpirit-Vsts-DeleteResourceGroupIfEmpty"
+      }
+    }
+  ]
+}
