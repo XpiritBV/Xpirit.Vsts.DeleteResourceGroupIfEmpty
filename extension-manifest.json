@@ -46,7 +46,7 @@
   },
   "links": {
     "getstarted": {
-      "uri": "https://pgroene.wordpress.com/2016/12/13/vsts-task-clean-resource-group/"
+      "uri": "https://blog.olandese.nl/2016/12/19/vsts-task-delete-resource-group-if-empty/"
     },
     "support": {
       "uri": "https://github.com/XpiritBV/Vsts-Task-DeleteResourceGroupIfEmpty"
