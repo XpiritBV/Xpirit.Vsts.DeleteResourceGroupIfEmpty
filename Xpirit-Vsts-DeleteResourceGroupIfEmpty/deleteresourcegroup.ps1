@@ -14,17 +14,17 @@ if ($rg)
 
     if ($count -eq 0)
     { 
-        Write-Output "The resource group has no resources. Deleting it..."; 
+        Write-Output "The Resource Group has no resources. Deleting it..."; 
         Remove-AzureRmResourceGroup -Name $rgName -Force; 
     } 
     else
     { 
-        Write-Output "The resource group $rgName has $count resources, it will NOT be deleted"; 
+        Write-Output "The Resource Group $rgName has $count resources, it will NOT be deleted"; 
     }
 }
 else 
 {
-        Write-Host "Resource Group not Found" 
+        Write-Host "The Resource Group $rgName was not found" 
 }
 
 Write-Host "End of Task Delete Resource Group if it is empty" 
