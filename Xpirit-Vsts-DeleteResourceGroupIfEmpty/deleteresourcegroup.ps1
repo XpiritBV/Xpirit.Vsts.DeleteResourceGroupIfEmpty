@@ -24,9 +24,9 @@ if ($rg)
 }
 else 
 {
-        Write-Host "The Resource Group $rgName was not found" 
+        Write-Output "The Resource Group $rgName was not found" 
 }
 
-Write-Host "End of Task Delete Resource Group if it is empty" 
+Write-Output "End of Task Delete Resource Group if it is empty" 
 
 #thanks to Pascal Naber for his support!
