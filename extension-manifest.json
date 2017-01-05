@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "MarcoMansi-Xpirit-Vsts-DeleteResourceGroupIfEmpty",
   "name": "Delete an Azure Resource Group if it is empty",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "publisher": "marcomansi",
   "public": true,
   "targets": [
