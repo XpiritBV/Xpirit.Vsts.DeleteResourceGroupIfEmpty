@@ -21,7 +21,7 @@ if ($rg)
     { 
         Write-Output "The Resource Group $rgName has $($resources.Count) resources, it will NOT be deleted"; 
         Write-Output "List of resources found: ";
-        Write-Output $resources | Format-Table Name, ResourceType -AutoSize; 
+        Write-Output $resources | Format-Table Name, ResourceType, Location -AutoSize; 
     }
 }
 else 
