@@ -10,7 +10,7 @@ $rg = Get-AzureRmResourceGroup -Name $rgName -ErrorAction SilentlyContinue
 
 if ($rg)
 {    
-    $resources = Get-AzureRmResource | Where-Object { $_.ResourceGroupName -ceq $rgName };
+    $resources = @(Get-AzureRmResource | Where-Object { $_.ResourceGroupName -ceq $rgName });
     
     if ($resources.Count -eq 0)
     { 
@@ -19,7 +19,7 @@ if ($rg)
     } 
     else
     { 
-        Write-Output "The Resource Group $rgName has $count resources, it will NOT be deleted"; 
+        Write-Output "The Resource Group $rgName has $($resources.Count) resources, it will NOT be deleted"; 
         Write-Output "List of resources found: ";
         Write-Output $resources | Format-Table Name, ResourceType -AutoSize; 
     }
