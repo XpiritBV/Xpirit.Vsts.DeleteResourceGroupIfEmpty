@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "MarcoMansi-Xpirit-Vsts-DeleteResourceGroupIfEmpty",
   "name": "Delete an Azure Resource Group if it is empty",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "publisher": "marcomansi",
   "public": true,
   "targets": [
@@ -10,7 +10,7 @@
       "id": "Microsoft.VisualStudio.Services"
     }
   ],
-  "description": "Build an Release extension that enable you to delete a Resource Group on Azure if it does NOT contain any resource.",
+  "description": "Build and Release extension that enable you to delete an Azure Resource Group if it does NOT contain any resource.",
   "categories": [
     "Build and release"
   ],

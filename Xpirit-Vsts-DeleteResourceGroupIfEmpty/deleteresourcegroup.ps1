@@ -10,9 +10,9 @@ $rg = Get-AzureRmResourceGroup -Name $rgName -ErrorAction SilentlyContinue
 
 if ($rg)
 {    
-    $count = @(Get-AzureRmResource | Where-Object { $_.ResourceGroupName -ceq $rgName }).Count;
-
-    if ($count -eq 0)
+    $resources = Get-AzureRmResource | Where-Object { $_.ResourceGroupName -ceq $rgName };
+    
+    if ($resources.Count -eq 0)
     { 
         Write-Output "The Resource Group has no resources. Deleting it..."; 
         Remove-AzureRmResourceGroup -Name $rgName -Force; 
@@ -20,11 +20,13 @@ if ($rg)
     else
     { 
         Write-Output "The Resource Group $rgName has $count resources, it will NOT be deleted"; 
+        Write-Output "List of resources found: ";
+        Write-Output $resources | Format-Table Name, ResourceType -AutoSize; 
     }
 }
 else 
 {
-        Write-Output "The Resource Group $rgName was not found" 
+    Write-Output "The Resource Group $rgName was not found" 
 }
 
 Write-Output "End of Task Delete Resource Group if it is empty" 
