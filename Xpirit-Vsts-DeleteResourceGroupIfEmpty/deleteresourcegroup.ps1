@@ -19,16 +19,16 @@ if ($rg)
     } 
     else
     { 
-        Write-Output "The Resource Group $rgName has $($resources.Count) resources, it will NOT be deleted"; 
-        Write-Output "List of resources found: ";
+        Write-Output "The Resource Group $rgName has $($resources.Count) resources, it will NOT be deleted."; 
+        Write-Output "List of resources found:";
         Write-Output $resources | Format-Table Name, ResourceType, Location -AutoSize; 
     }
 }
 else 
 {
-    Write-Output "The Resource Group $rgName was not found" 
+    Write-Output "The Resource Group $rgName was not found." 
 }
 
-Write-Output "End of Task Delete Resource Group if it is empty" 
+Write-Output "End of Task Delete Resource Group if it is empty." 
 
 #thanks to Pascal Naber for his support!
