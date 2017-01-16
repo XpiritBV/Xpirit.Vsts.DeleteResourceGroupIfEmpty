@@ -4,7 +4,7 @@ With this task you delete a Resource Group if it does not contain ANY resources.
 
 # Description
 
-In the scenario where you want to delete a the Resource Group only when it doest not contain any resources, you can use this task.
+In the scenario where you want to delete an Azure Resource Group only when it does not contain any resources, you can use this task.
 
 To use the task, just select the connection to azure and then give the Resource Group name as parameter.
 
